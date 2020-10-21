@@ -7,13 +7,14 @@ module.exports = {
     mode: 'production',
     output: {
         filename: 'itivrutaha.js',
-        path: path.join(__dirname, 'dist', 'web')
+        path: path.join(__dirname, 'dist', 'web'),
     },
     resolve: {
-        extensions: [ '.ts', '.js' ]
+        extensions: ['.ts', '.js'],
     },
     devServer: {
-        index: '/example/web/'
+        index: '/example/web/',
+        writeToDisk: true,
     },
     module: {
         rules: [
@@ -27,24 +28,14 @@ module.exports = {
                                 declaration: false,
                                 incremental: false,
                                 declarationDir: false,
-                                declarationMap: false
-                            }
-                        }
-                    }
+                                declarationMap: false,
+                            },
+                        },
+                    },
                 ],
                 exclude: /node_modules/,
             },
         ],
     },
-    plugins: [
-        // new browserSync({
-        //     // browse to http://localhost:8080/ during development
-        //     host: '0.0.0.0',
-        //     port: 8080,
-        //     server: { baseDir: __dirname },
-        //     files: `${__dirname}/**/*`,
-        //     open: false,
-        //     notify: false
-        // })
-    ]
+    plugins: [],
 }

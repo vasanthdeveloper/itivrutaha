@@ -1,6 +1,6 @@
 {
     "name": "itivrutaha",
-    "description": "( इतिवृत्तः ) - Dynamic 🖊️ logging library 📚 for Node.js and 🌏 browser.",
+    "description": "( इतिवृत्तः ) - Dynamic ✍️ logging library 📚 for Node.js and 🌏 browser.",
     "version": "2.0.0-beta",
     "license": "MIT",
     "main": "dist/node/itivrutaha.js",
@@ -25,7 +25,14 @@
     "dependencies": {},
     "devDependencies": {
         "@types/node": "^14.14.0",
+        "@typescript-eslint/eslint-plugin": "^4.5.0",
+        "@typescript-eslint/parser": "^4.5.0",
         "concurrently": "^5.3.0",
+        "eslint": "^7.11.0",
+        "eslint-config-prettier": "^6.13.0",
+        "eslint-plugin-prefer-arrow": "^1.2.2",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^2.1.2",
         "ts-loader": "^8.0.6",
         "typescript": "^4.0.3",
         "webpack": "^5.1.3",

@@ -3,5 +3,4 @@
  *  Created On 20 October 2020
  */
 
-import { k } from './import'
-console.log('🙏', k)
+console.log('🙏')
